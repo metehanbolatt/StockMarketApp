@@ -53,7 +53,7 @@ class CompanyInfoViewModel @Inject constructor(
                 }
                 is Resource.Error -> {
                     state = state.copy(
-                        stockInfos = emptyList(),
+                        company = null,
                         isLoading = false,
                         error = result.message
                     )
